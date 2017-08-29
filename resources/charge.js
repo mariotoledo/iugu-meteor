@@ -2,7 +2,7 @@ Iugu.API.prototype.charge = function(charge) {
   var ret;
   ret = HTTP.post(this.base_url + 'charge', {
     auth: this.api_token + ':',
-    data: options
+    data: charge
   });
   return this.check_for_errors(ret);
 };
